@@ -1,0 +1,56 @@
+body {
+  background-image: url(../fotos/hombre-a-la-luz-de-la-luna-arte-digital_1920x1080_xtrafondos.com.jpg);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  h1 {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Francois One", sans-serif;
+  }
+  .cen {
+    text-align: center;
+    margin-top: 50px;
+    background-color: $imag;
+  }
+}
+
+.presentacion {
+  display: flex;
+  &_imagen {
+    width: 50vw;
+    &--picture {
+      border-radius: 10px;
+      margin-top: 25px;
+      &:hover {
+        transform: scale(110%);
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.texto {
+  text-align: center;
+  text-align: justify;
+  font-family: "Pathway Gothic One", sans-serif;
+  margin-top: 25px;
+  font-size: 25px;
+  background-color: $color;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: rgba(255, 0, 0, 0.486);
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: -100;
+  .nes:hover {
+    background-color: wheat;
+    border-radius: 5px;
+  }
+}
